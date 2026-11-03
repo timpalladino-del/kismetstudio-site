@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["69MM5TC2UN.io.kismetstudio.lantern"],
+        "components": [
+          { "/": "/lantern/p/*", "comment": "Lantern profile links: new and import" }
+        ]
+      }
+    ]
+  },
+  "webcredentials": { "apps": ["69MM5TC2UN.io.kismetstudio.lantern"] }
+}

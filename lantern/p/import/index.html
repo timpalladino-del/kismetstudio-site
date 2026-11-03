@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Lantern profile was sent to you — Lantern</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../../../favicon.ico?v=3" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../lantern.css">
+</head>
+<body>
+<div class="sky" style="min-height:100vh">
+  <header class="wrap"><nav class="nav"><a class="brand" href="../../">Lantern</a><a href="../../">What is Lantern? ›</a></nav></header>
+  <main class="wrap">
+    <section class="hero" style="border-top:0">
+      <img class="icon" src="../../icon-512.png" width="120" height="120" alt="Lantern app icon">
+      <h1 style="font-size:clamp(30px,5vw,46px)">A Lantern profile was sent to you</h1>
+      <p class="lede">Someone sent you their profile for your Lantern household. On an iPhone with Lantern installed, this page opens the app and shows the profile. If it did not, tap the button.</p>
+      <div class="cta">
+        <a class="pill lg" id="open" href="#">Open in Lantern</a>
+        <a class="pill lg soft" href="../../">Don't have Lantern yet?</a>
+      </div>
+      <p class="sub">Lantern is coming soon to the App Store. Install it, then open this link again. The details in this link stay in the link; nothing is stored on this site.</p>
+    </section>
+  </main>
+</div>
+<script>
+  // Hand the same query to the app's custom scheme as a fallback for iOS versions that did not open the app directly.
+  (function () {
+    var target = "lantern://profile/import" + location.search;
+    var open = document.getElementById("open");
+    open.setAttribute("href", target);
+    if (/iPhone|iPad|iPod/.test(navigator.userAgent)) { setTimeout(function () { location.href = target; }, 400); }
+  })();
+</script>
+</body>
+</html>
