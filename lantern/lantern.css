@@ -111,3 +111,30 @@ h2.sec { font-family:var(--serif); font-weight:500; font-size:clamp(30px, 3.6vw,
 footer { padding:26px 0 44px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:13px; color:var(--ink-3); border-top:1px solid var(--row-line); }
 footer a { text-decoration:none; }
 footer a:hover { color:var(--ink); }
+/* how-to guide */
+.toc { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
+.guide h3 { font-family:var(--serif); font-weight:500; font-size:23px; line-height:1.2; margin-top:30px; }
+.guide p, .guide li { color:var(--ink-2); font-size:16.5px; max-width:40em; }
+.guide p { margin:12px 0 0; }
+.guide p.lede { font-size:17px; margin-top:14px; }
+.guide ul, .guide ol { margin:12px 0 0; padding-left:22px; }
+.guide li { margin-bottom:8px; }
+.guide strong { color:var(--ink); font-weight:600; }
+.guide .where { font-size:14.5px; color:var(--ink-3); }
+.split { display:grid; grid-template-columns:minmax(0, 1fr) 250px; gap:48px; align-items:start; }
+@media (max-width:820px) { .split { grid-template-columns:minmax(0, 1fr); gap:28px; } }
+.phone { margin:8px auto 0; width:100%; max-width:250px; }
+@media (min-width:821px) { .split .phone { position:sticky; top:24px; } }
+.phone .crop { border-radius:28px 28px 0 0; overflow:hidden; border:1px solid var(--card-line); border-bottom:0; -webkit-mask-image:linear-gradient(#000 84%, transparent); mask-image:linear-gradient(#000 84%, transparent); }
+.phone img { width:100%; height:100%; object-fit:cover; object-position:top; }
+.phone figcaption { font-size:13px; color:var(--ink-3); margin-top:8px; text-align:center; }
+.guide ol.steps { list-style:none; counter-reset:step; padding:0; margin-top:22px; display:grid; gap:14px; }
+.guide .steps > li { counter-increment:step; position:relative; margin:0; max-width:none; background:var(--card); border:1px solid var(--card-line); border-radius:20px; box-shadow:var(--card-shadow); padding:20px 22px 20px 68px; }
+.guide .steps > li::before { content:counter(step); position:absolute; left:20px; top:20px; width:32px; height:32px; border-radius:50%; background:var(--pill); color:var(--pill-ink); font-weight:700; font-size:15px; display:flex; align-items:center; justify-content:center; }
+.guide .steps h3 { margin-top:2px; font-size:21px; }
+.callout { background:var(--card); border:1px solid color-mix(in srgb, var(--glow) 55%, transparent); border-radius:16px; padding:14px 18px; margin-top:18px; max-width:40em; }
+.guide .callout p { margin:0; font-size:15.5px; }
+.faq details { border-top:1px solid var(--row-line); padding:16px 0; max-width:44em; }
+.faq details:first-of-type { margin-top:22px; }
+.faq summary { font-weight:600; font-size:17px; cursor:pointer; color:var(--ink); }
+.faq details p { margin-top:10px; }
