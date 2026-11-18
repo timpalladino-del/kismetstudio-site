@@ -25,7 +25,7 @@
   <div class="wrap narrow">
     <h1>Privacy</h1>
     <p class="lede">Written in plain words, because a privacy policy nobody can read is not really a privacy policy.</p>
-    <p class="stamp">Last updated November 7, 2026</p>
+    <p class="stamp">Last updated November 18, 2026</p>
   </div>
 </header>
 <div class="wrap narrow">
@@ -33,7 +33,7 @@
     <div class="headline">
       <h2>The short version</h2>
       <p>Lantern has <strong>no account, no login and no server</strong>. Your supplies, your people, their medications, your plan and your photos are stored <strong>on your iPhone</strong> and are not uploaded anywhere by us.</p>
-      <p>There is <strong>one optional lookup</strong>: when you scan a barcode, the barcode's digits (and nothing else) can be sent to Open Food Facts to fetch a product name. You can turn that off in Settings.</p>
+      <p>There are <strong>two optional lookups</strong>. When you scan a barcode, the barcode's digits (and nothing else) can be sent to Open Food Facts to fetch a product name and its nutrition facts. If you save a place for weather alerts, that place's coordinates are sent to the National Weather Service. You can turn the barcode lookup off in Settings, and weather alerts stop when you remove the place.</p>
       <p>We do not sell anything, we do not run ads, and we collect <strong>no analytics</strong>. There is nothing here to sell.</p>
     </div>
   </section>
@@ -43,10 +43,11 @@
     <p>All of this lives in the app's own storage on your device and is never transmitted by Lantern:</p>
     <ul>
       <li>Supplies: names, quantities, dates, locations, barcodes, notes and photos</li>
-      <li>Equipment and maintenance history</li>
-      <li>The people in your household: names, ages, size, activity level, allergies and dietary notes</li>
+      <li>Gear and its maintenance history</li>
+      <li>The people in your household: names, photos, ages, size, activity level, skills, allergies and dietary notes</li>
       <li>Medications: names, doses, times, instructions, prescriber and pharmacy details, Rx numbers and supply counts</li>
-      <li>Pets, emergency contacts, your meeting plan and shutoff notes and photos</li>
+      <li>Pets: names, photos, weight, microchip and vet details, vaccination record photos and your plan for them if you have to leave</li>
+      <li>Emergency contacts, your meeting plan and shutoff notes and photos</li>
       <li>Outage history, shopping lists and settings</li>
     </ul>
     <p>If you delete the app, all of it is gone. There is no cloud copy, because there is no cloud. Your iPhone's own backup (iCloud Backup or a computer backup) may include the app's data, under Apple's terms and your settings.</p>
@@ -65,10 +66,10 @@
       <tr><td>Analytics, tracking or advertising identifiers</td><td class="v no">None</td></tr>
       <tr><td>Photos or camera frames</td><td class="v no">Processed on the device, never uploaded</td></tr>
     </table>
-    <p><strong>Barcode lookup.</strong> When "Look up barcodes online" is on, the digits of a scanned barcode are sent over an encrypted connection to Open Food Facts, a public, non-profit food database, which returns a product name. No other data is sent and no identifier accompanies the request. Open Food Facts' own <a href="https://world.openfoodfacts.org/terms-of-use">terms</a> apply to their service. Turn the setting off and scanning still works; you type the name instead.</p>
+    <p><strong>Barcode lookup.</strong> When "Look up barcodes online" is on, the digits of a scanned barcode are sent over an encrypted connection to Open Food Facts, a public, non-profit food database, which returns a product name and nutrition facts. No other data is sent and no identifier accompanies the request. Open Food Facts' own <a href="https://world.openfoodfacts.org/terms-of-use">terms</a> apply to their service. Turn the setting off and scanning still works; you type the name instead.</p>
     <p><strong>Weather alerts.</strong> If you save a place (by ZIP code or by tapping "Use my location"), Lantern sends that place's coordinates over an encrypted connection to the National Weather Service's public alerts feed at api.weather.gov when you open the app and, now and then, in the background, and shows the watches and warnings in effect there. No name, identifier or other data goes with the request. A ZIP code is turned into coordinates on your phone through Apple's geocoder, under Apple's terms. Remove the place and the requests stop.</p>
     <p><strong>Sharing.</strong> Profile links, medication cards, plans and CSV exports are created on your phone and handed to the iOS share sheet. They go only where you send them, through Messages, Mail or whatever app you pick, under that app's privacy terms. A profile link contains the details you entered, encoded in the link itself; treat it like the information it carries.</p>
-    <p><strong>Purchases.</strong> Family plans are sold through Apple's App Store. Apple handles payment, billing and your Apple ID. We receive no personal information about you from a purchase; the app checks your subscription status with Apple directly on your device.</p>
+    <p><strong>Purchases.</strong> The Duo and Family plans are sold through Apple's App Store. Apple handles payment, billing and your Apple ID. We receive no personal information about you from a purchase; the app checks your subscription status with Apple directly on your device.</p>
   </section>
 
   <section>
@@ -77,7 +78,7 @@
       <li><strong>Camera</strong>, to read barcodes and printed dates on the device. Nothing is recorded or uploaded.</li>
       <li><strong>Location (while using)</strong>, for the compass heading and for the "Use my location" button on a storage spot, a meeting spot or a weather-alert place. Lantern reads your location only when you tap that button, keeps the coordinates on your phone, and never tracks you. Weather-alert places are the one case where coordinates leave the phone, as described above.</li>
       <li><strong>Notifications</strong>, for the weekly digest, expiry, medication and equipment reminders, the outage check-in and new weather alerts for your saved places. All are scheduled on your phone; no server is involved.</li>
-      <li><strong>Photos</strong>, only when you attach a photo to an item or a shutoff note.</li>
+      <li><strong>Photos</strong>, only when you attach a photo to an item, a shutoff note, a person, a pet or a pet's vaccination record.</li>
     </ul>
     <p>Every permission is optional. Decline it and the related feature is the only thing that stops working.</p>
   </section>
