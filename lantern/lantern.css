@@ -61,7 +61,7 @@ img { max-width:100%; display:block; }
 .hero p.lede { color:var(--ink-2); font-size:17.5px; max-width:38em; margin:18px auto 0; }
 .hero .cta { margin-top:26px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
 .hero .sub { margin-top:14px; font-size:13.5px; color:var(--ink-3); }
-.hero-art { margin:34px auto 0; border-radius:22px; box-shadow:var(--card-shadow); border:1px solid var(--card-line); max-width:980px; }
+.hero-art { display:block; margin:34px auto 0; border-radius:22px; box-shadow:var(--card-shadow); border:1px solid var(--card-line); width:100%; max-width:980px; height:auto; }
 /* sections */
 section { padding:48px 0; }
 section + section { border-top:1px solid var(--row-line); }
